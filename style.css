@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: rgb(236, 227, 227);
+    color: black;
+}
+
+html, body {
+    height: 100%; 
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+button {
+    padding: .5rem;
+    border-radius: 10%;
+    background-color: black;
+    color: #ffff;
+    font-size: 1rem;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+#message {
+    font-size: 1.567rem;
+    text-align: center;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 800;
+    padding: .25rem;
+}
+
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 1.5rem; 
+    }
+    .container {
+        padding: 1rem; 
+    }
+
+    button {
+        font-size: 0.9rem; 
+        padding: .4rem 1rem; 
+    }
+
+    #message {
+        font-size: 1.3rem; 
+        padding: .2rem; 
+    }
+}
+
+@media (max-width: 375px) {
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    #message {
+        font-size: 1.2rem; 
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 1.2rem; 
+    }
+
+    button {
+        font-size: 0.8rem; 
+        padding: .3rem 0.8rem; 
+    }
+
+    #message {
+        font-size: 1rem; 
+    }
+}
